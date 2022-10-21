@@ -1,19 +1,29 @@
 :root{
     --title-color:#212121;
     --second-color:#757575;
+    --background-color-main: #F5F5F5;
+    --background-color-second: #2F303A;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
+    font-family: inherit;
 }
 
 ul{
     list-style-type: none;
 }
+
+button {
+    border: none;
+    font-family: inherit;
+}
+
 .body{
     font-family: 'Roboto', sans-serif;
     color: var(--second-color);
-    background: #F5F5F5;
+    background:var(--background-color-main);
 }
 
 button {
@@ -163,11 +173,32 @@ button {
 .address-footer{
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
-    
+    color: #FFFFFF;
 }
 
 .address-footer-link{
     color: rgba(255, 255, 255, 0.6);
+}
+
+/* portfolio */
+
+.filter-button:focus,
+.filter-button:hover {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+.project-title {
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.project-kind {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.03em;
 }
